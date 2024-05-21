@@ -1,0 +1,66 @@
+import React, { useRef, useState } from 'react'
+import { useAuth } from '@/contexts/auth-context'
+import Swal from 'sweetalert2'
+import { useGLTF, 
+
+ } from '@react-three/drei'
+
+
+export default function NesCon(props) {
+  const group = useRef()
+  const { nodes, materials } = useGLTF('/3Ddemo/props/NesCon.gltf')
+
+  const { auth } = useAuth()
+
+  const [clicked, click] = useState(false)
+
+  const handleClick = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/game/ruins_final", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          user_id: auth.id,
+          missionId: 8, // 更新 achieved_id 為 1 的資料ss
+          newValue: 1, // 新的 activate 值
+        }),
+      });
+      if (response.ok) {
+        console.log("Achievement updated successfully.");
+        click(!clicked); // 切換 clicked 狀態以更新 <mesh> 的狀態
+        Swal.fire({
+          toast: true,
+          width: 280,
+          position: 'top',
+          icon: 'success',
+          iconColor: 'black',
+          title: 'You found something!',
+          showConfirmButton: false,
+          timer: 1500,
+        })
+      } else {
+        console.error("Failed to update achievement.");
+      }
+    } catch (error) {
+      console.error("Error updating achievement:", error);
+    }
+  };
+  return (
+    <group onClick={handleClick}>
+    <group ref={group} {...props} dispose={null} scale={0.5}>
+<mesh geometry={nodes.Plane030.geometry} material={materials['Material.033']} />
+<mesh geometry={nodes.Plane030_1.geometry} material={materials['Material.032']} />
+<mesh geometry={nodes.Plane009.geometry} material={nodes.Plane009.material} />
+<mesh geometry={nodes.Plane010.geometry} material={nodes.Plane010.material} />
+<mesh geometry={nodes.Cylinder002.geometry} material={materials['Material.034']} />
+<mesh geometry={nodes.BezierCurve.geometry} material={nodes.BezierCurve.material} />
+<mesh geometry={nodes.Cube.geometry} material={nodes.Cube.material} />
+
+    </group>
+    </group>
+  )
+}
+
+useGLTF.preload('/3Ddemo/props/NesCon.gltf')

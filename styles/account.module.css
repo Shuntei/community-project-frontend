@@ -1,0 +1,12 @@
+.bg-custom {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-custom::before {
+    background-image: url('../public/home2.jpg');
+    position: absolute;
+    background-size: cover;
+    inset: 0;
+}

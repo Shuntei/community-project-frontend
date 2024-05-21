@@ -1,0 +1,15 @@
+.progressBar {
+  animation: progress 6s;
+  padding: 0.3em;
+  text-align: center;
+  background-color: #64CD8A;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  background-color: #292929;
+  color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  font-family: "IBM Plex Mono", "Noto Sans TC";
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+/* 開始 */
+@media (max-width: 768px) {
+
+  .container{
+    flex-direction: column;
+  }
+
+}

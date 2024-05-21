@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg: #292929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--main-bg);
+  /* font-family: 'IBM Plex Mono', monospace; */
+  font-family: "IBM Plex Mono", "Noto Sans TC";
+  width: 100%;
+  /* overflow-x: hidden; */
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: all 0s 50000s;
+}
+
+/* johnny  start*/
+@layer utilities {
+  .border-style1 {
+    border: 0.8px solid #dbd7de;
+  }
+  .hover1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  .hover2 {
+    background: rgb(42, 38, 38);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .hover3 {
+    background: #dbd7de;
+  }
+  .shadow1 {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  /* .parent-black {
+    background-color: black;
+  } */
+  .notification {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 90.24%
+    );
+  }
+  .PcImagePosition {
+    @apply absolute translate-x-[50%] translate-y-[-40%];
+  }
+  /* ::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  } */
+}
+/* johnny  end*/
