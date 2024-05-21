@@ -14,7 +14,7 @@ const notify = () => {
     icon: 'info',
     showConfirmButton: true,
     showCancelButton: true,
-    confirmButtonText: `<a href=${API_SERVER}/member/account/login">點擊登入</a>`,
+    confirmButtonText: `<a href="${API_SERVER}/member/account/login">點擊登入</a>`,
     cancelButtonText: `取消登入`,
     confirmButtonColor: '#292929', //#006400
     cancelButtonColor: '#8B0000',
