@@ -5,6 +5,7 @@ import { useAuth } from '@/contexts/auth-context'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { useBoards } from '@/contexts/use-boards'
+import { API_SERVER } from '../config/api-path'
 
 const notify = () => {
   const MySwal = withReactContent(Swal)
@@ -13,7 +14,7 @@ const notify = () => {
     icon: 'info',
     showConfirmButton: true,
     showCancelButton: true,
-    confirmButtonText: `<a href="http://localhost:3000/member/account/login">點擊登入</a>`,
+    confirmButtonText: `<a href=${API_SERVER}/member/account/login">點擊登入</a>`,
     cancelButtonText: `取消登入`,
     confirmButtonColor: '#292929', //#006400
     cancelButtonColor: '#8B0000',
