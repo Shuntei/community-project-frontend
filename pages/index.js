@@ -1,6 +1,7 @@
-import Navbar from '@/components/linda/navbar/navbar'
-import HomeContent from '@/components/linda/homeContent/homeContent'
-import Footer from '@/components/linda/footer/footer'
+// import Navbar from '@/components/linda/navbar/navbar'
+// import HomeContent from '@/components/linda/homeContent/homeContent'
+// import Footer from '@/components/linda/footer/footer'
+import MainPage from './community/main-page'
 import Head from 'next/head'
 
 export default function Home() {
@@ -14,9 +15,10 @@ export default function Home() {
         <title>RUINS</title>
         <link rel="icon" href="/icons/favicon.png" />
       </Head>
-      <Navbar />
+      <MainPage/>
+      {/* <Navbar />
       <HomeContent />
-      <Footer />
+      <Footer /> */}
     </>
   )
 }

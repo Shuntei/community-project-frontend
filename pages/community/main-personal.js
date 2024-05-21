@@ -1,7 +1,7 @@
 import FollowsBar from '@/components/johnny/bar-follows-notify'
 import InfoBar from '@/components/johnny/bar-ps-intro'
 import PageSelect from '@/components/johnny/page-select'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import CentralPersonal from './central-personal'
 import Navbar from '@/components/linda/navbar/navbar'
 import { useAuth } from '@/contexts/auth-context'
