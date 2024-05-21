@@ -3,11 +3,13 @@
 這是與小組合作的專案  
 我負責community(社群)的部分  
 資料夾或檔案位置:  
+
 前端  
 ruins-next/components/johnny  
 ruins-next/contexts/use-boards.js  
 ruins-next/contexts/use-toggles.js  
 ruins-next/pages/community  
+
 後端(存放在另一個repository)  
 ruins-node/routes/johnny  
 ruins-node/utils/johnny/upload-imgs.js  
