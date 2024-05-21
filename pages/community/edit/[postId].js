@@ -22,10 +22,7 @@ import tagsHandler from '@/components/johnny/utils/tagsHandler'
 import Emotion from '@/components/johnny/modal-post-options/emotion'
 import {
   RiImageFill,
-  RiPriceTag3Fill,
-  RiEqualizerLine,
   RiSendPlane2Fill,
-  RiDraftLine,
   RiCloseCircleLine,
   RiCloseLargeLine,
   RiArrowDropDownLine,
@@ -244,7 +241,7 @@ export default function EditModal() {
                       <option
                         key={v.board_id}
                         value={v.board_id}
-                        className="text-[24px]"
+                        className="text-[18px]"
                       >
                         {v.board_name}
                       </option>
