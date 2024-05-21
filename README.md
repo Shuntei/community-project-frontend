@@ -8,13 +8,14 @@ ruins-next/components/johnny
 ruins-next/contexts/use-boards.js  
 ruins-next/contexts/use-toggles.js  
 ruins-next/pages/community  
-後端  
+後端(存放在另一個repository)  
 ruins-node/routes/johnny  
 ruins-node/utils/johnny/upload-imgs.js  
 
 1.下載檔案後分別進入ruins-next和ruins-node檔案位置並執行npm i  
 2.在ruins-node執行npm run dev,在ruins-next執行npm run build後,執行npm start  
-3.輸入網址: http://localhost:3000/community/main-page 進入頁面  
+3.輸入網址: http://localhost:3000/community/main-page 進入頁面    
+(或是參考佈署vercel的網頁: community-project-frontend.vercel.app)  
 
 進入頁面後  
 主要有community(公共論壇)、personal(個人頁面)兩部分，有RWD設計、使用線上資料庫  
