@@ -1,5 +1,7 @@
-export const API_SERVER = 'http://localhost:3001'
-export const IMG_SERVER = 'http://localhost:3001/img'
+// export const API_SERVER = 'http://localhost:3001'
+export const API_SERVER = 'https://ruins-node.fly.dev'
+// export const IMG_SERVER = 'http://localhost:3001/img'
+export const IMG_SERVER = 'https://ruins-node.fly.dev/img'
 
 // signup
 export const MB_SIGNUP = `${API_SERVER}/member/signup`
@@ -52,7 +54,7 @@ export const PRODUCT_COMMENT_ADD = `${API_SERVER}/product/product-comment`
 export const PRODUCT_RELATED = `${API_SERVER}/product/api/relatedProducts`
 
 // 商品收藏紀錄
-export const PRODUCT_FAV =`${API_SERVER}/product/product-fav`
+export const PRODUCT_FAV = `${API_SERVER}/product/product-fav`
 
 // 商品加入收藏
 export const PRODUCT_ADD_FAV = `${API_SERVER}/product/add-product-fav` // POST

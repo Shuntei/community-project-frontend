@@ -1,4 +1,4 @@
-const { protocol } = require("socket.io-client");
+const { protocol } = require('socket.io-client')
 
 module.exports = {
   images: {
@@ -11,12 +11,17 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'ruins-node.fly.dev',
+        pathname: '/community/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
       },
       {
         protocol: 'http',
         hostname: 'localhost',
-      }
+      },
     ],
   },
 }
