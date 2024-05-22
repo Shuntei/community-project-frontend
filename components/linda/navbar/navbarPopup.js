@@ -17,7 +17,7 @@ export default function NavbarPopup() {
       icon: 'info',
       showConfirmButton: true,
       showCancelButton: true,
-      confirmButtonText: `<a href="http://localhost:3000/member/account/login">點擊登入</a>`,
+      confirmButtonText: `<a href="https://community-project-frontend.vercel.app/member/account/login">點擊登入</a>`,
       cancelButtonText: `取消登入`,
       confirmButtonColor: '#292929', //#006400
       cancelButtonColor: '#8B0000',
@@ -37,10 +37,12 @@ export default function NavbarPopup() {
               <a href="/shop">SHOP</a>
             </p>
             <p className="font-['IBM Plex Mono'] ">
-              <Link href="/shop">ALL GOODS</Link>
+              {/* <Link href="/shop">ALL GOODS</Link> */}
+              <span>ALL GOODS</span>
             </p>
             <p className="font-['IBM Plex Mono'] ">
-              <Link href="/shop/product/my-order">ORDER LIST</Link>
+              {/* <Link href="/shop/product/my-order">ORDER LIST</Link> */}
+              <span>ORDER LIST</span>
             </p>
           </div>
           <div className={`${styles['title']} space-y-1`}>
@@ -74,23 +76,25 @@ export default function NavbarPopup() {
           </div>
           <div className={`${styles['title']} space-y-1`}>
             <p className="border-b mb-5 font-['IBM Plex Mono']">
-              <a href="/chat">CHATROOM</a>
+              {/* <a href="/chat">CHATROOM</a> */}
+              <span>CHATROOM</span>
             </p>
             <p className="font-['IBM Plex Mono']">
-              <a href="/chat">START NOW</a>
+              {/* <a href="/chat">START NOW</a> */}
+              <span>START NOW</span>
             </p>
           </div>
           <div className={`${styles['title']} space-y-1 mb-[50px] md:mb-0`}>
             <p className="border-b mb-5 font-['IBM Plex Mono']">
-              <a href="/tour/main-search">TOUR</a>
+              {/* <a href="/tour/main-search">TOUR</a> */}
+              <span>TOUR</span>
             </p>
             <p className="font-['IBM Plex Mono']">
               <a href="/member/account-settings/my-trips">MY TRIPS</a>
             </p>
             <p className="font-['IBM Plex Mono']">
-              <a href="/member/account-settings/fav-tour-lists">
-                FAVORITE TOURS
-              </a>
+              {/* <a href="/member/account-settings/fav-tour-lists"> */}
+              <span>FAVORITE TOURS</span>
             </p>
             <p className="font-['IBM Plex Mono']">
               <a href="/member/account-settings/my-posts">MY POSTS</a>
@@ -98,10 +102,12 @@ export default function NavbarPopup() {
           </div>
           <div className={`${styles['title']} space-y-1`}>
             <p className="border-b mb-5 font-['IBM Plex Mono']">
-              <a href="/game">GAME</a>
+              {/* <a href="/game">GAME</a> */}
+              <span>GAME</span>
             </p>
             <p className="font-['IBM Plex Mono']">
-              <a href="/game/three">JOIN GAME</a>
+              {/* <a href="/game/three">JOIN GAME</a> */}
+              <span>JOIN GAME</span>
             </p>
           </div>
         </div>
