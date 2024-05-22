@@ -91,7 +91,8 @@ export default function NavbarPopup() {
               <span>TOUR</span>
             </p>
             <p className="font-['IBM Plex Mono']">
-              <a href="/member/account-settings/my-trips">MY TRIPS</a>
+              {/* <a href="/member/account-settings/my-trips">MY TRIPS</a> */}
+              <span>MY TRIPS</span>
             </p>
             <p className="font-['IBM Plex Mono']">
               {/* <a href="/member/account-settings/fav-tour-lists"> */}
