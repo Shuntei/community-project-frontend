@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './navbarPopup.module.css'
 import { useAuth } from '@/contexts/auth-context'
 import Swal from 'sweetalert2'
@@ -34,7 +34,8 @@ export default function NavbarPopup() {
         <div id="catalogueBox" className={styles['catalogueBox']}>
           <div className={`${styles['title']} space-y-1 mb-[50px] md:mb-0`}>
             <p className="border-b mb-5 font-['IBM Plex Mono']">
-              <a href="/shop">SHOP</a>
+              {/* <a href="/shop">SHOP</a> */}
+              <span>SHOP</span>
             </p>
             <p className="font-['IBM Plex Mono'] ">
               {/* <Link href="/shop">ALL GOODS</Link> */}
@@ -97,7 +98,8 @@ export default function NavbarPopup() {
               <span>FAVORITE TOURS</span>
             </p>
             <p className="font-['IBM Plex Mono']">
-              <a href="/member/account-settings/my-posts">MY POSTS</a>
+              {/* <a href="/member/account-settings/my-posts">MY POSTS</a> */}
+              <span>MY POSTS</span>
             </p>
           </div>
           <div className={`${styles['title']} space-y-1`}>
